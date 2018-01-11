@@ -2,7 +2,7 @@ var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './index.js',
+  entry: './src/index.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
@@ -21,7 +21,7 @@ module.exports = {
       },
       {test: /\.css$/, loader: 'style-loader!css-loader'},
       {
-        test: /\.(jpg|png|svg)$/,
+        test: /\.(jpg|jpeg|png|svg)$/,
         loader: 'file-loader',
       },
     ],
