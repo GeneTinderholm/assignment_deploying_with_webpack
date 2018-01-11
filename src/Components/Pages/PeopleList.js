@@ -20,11 +20,11 @@ class PeopleList extends Component {
       people: []
     };
     
-    this.onClick = this.onClick.bind(this);
+    // this.onClick = this.onClick.bind(this);
 
   }
 
-  onClick(page) {
+  onClick = (page) => {
     console.log("------------------- START page -------------------");
     console.log(page);
     console.log("-------------------- END page --------------------");
